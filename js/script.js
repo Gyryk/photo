@@ -71,7 +71,7 @@
 			this.imagesTotal = this.images.length;
 			this.imgPosition = 0;
 			this.zIndexVal = 1;
-			this.threshold = 250;
+			this.threshold = 360;
 			requestAnimationFrame(() => this.render());
 		}
 		render() 
@@ -133,7 +133,7 @@
 				)
 				.to(
 					img.DOM.el,
-					0.9,
+					2.9,
 					{
 						ease: Expo.easeOut,
 						x: mousePos.x - img.rect.width / 2,
@@ -143,7 +143,7 @@
 				)
 				.to(
 					img.DOM.el,
-					1,
+					2,
 					{
 						ease: Power1.easeOut,
 						opacity: 0,
@@ -152,7 +152,7 @@
 				)
 				.to(
 					img.DOM.el,
-					1,
+					3,
 					{
 						ease: Quint.easeOut,
 						scale: 0.2,

@@ -1,0 +1,59 @@
+* 
+{
+	box-sizing: border-box;
+}
+
+html,
+body 
+{
+	height: 100vh;
+}
+
+body 
+{
+	background-color: #111111;
+	color: #fffcef;
+	overflow: hidden;
+	margin: 0px;
+}
+
+.content 
+{
+	height: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title 
+{
+	font-family: Gunterz, monospace, sans-serif;
+	z-index: 1000000;
+	font-size: 5vw;
+    font-weight: 1000;
+	text-shadow: 4px 4px #000000;
+	letter-spacing: 0.125vw;
+}
+
+.photo 
+{
+	height: 50vmin;
+	position: absolute;
+	transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.photo[data-status="inactive"]
+{
+	display: none;
+}
+.photo[data-status="active"]
+{
+	display: block;
+}
+
+@font-face 
+{
+    font-family: 'Gunterz';
+    src: url('../Gunterz.otf');
+}

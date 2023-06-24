@@ -18,7 +18,7 @@ const distanceFromLast = (x, y) => {
 }
 
 const handleOnMove = e => {
-  if(distanceFromLast(e.clientX, e.clientY) > (window.innerWidth / 8)) {
+  if(distanceFromLast(e.clientX, e.clientY) > (window.innerWidth / 16)) {
     const lead = images[globalIndex % images.length],
           tail = images[(globalIndex - 4) % images.length];
 

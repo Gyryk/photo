@@ -55,5 +55,5 @@ body
 @font-face 
 {
     font-family: 'Gunterz';
-    src: url('../Gunterz.otf');
+    src: url('Gunterz.otf');
 }
